@@ -23,9 +23,9 @@ class PokeApi():
         except:
             return print("There is some errors")
         pokedex = Pokemon(str(r["id"]), r["name"], str(r["height"]), str(r["weight"]))
-        print ("name: " + pokedex.name.upper())
-        print("id: " + pokedex.id)
-        print("height: " + pokedex.height)
-        print("weight: " + pokedex.weight)
+        print ("Name: " + pokedex.name.upper())
+        print("Id: " + pokedex.id)
+        print("Height: " + pokedex.height)
+        print("Weight: " + pokedex.weight)
 pokemon_name = input("Type pokemon id or pokemon name: ")
 PokeApi().get_pokemon(pokemon_name)
