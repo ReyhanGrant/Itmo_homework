@@ -24,8 +24,10 @@ class PokeApi():
     def get_all(get_name, state):
         if state=="True":
             print(PokeApi().get_pokemon(get_name))
-        else:
+        elif state == "False":
             print(BasePokemon(PokeApi().get_pokemon(get_name).name))
+        else:
+            print("Incorrect data")
 pokemon_name = input("Type pokemon id or pokemon name: ")
 state = input("Get all info?(True or False): ")
 PokeApi().get_all(pokemon_name, state)
