@@ -29,7 +29,6 @@ class PokeApi():
 pokemon_name = input("Type pokemon id or pokemon name: ")
 state = input("Get all info?(True or False): ")
 PokeApi().get_all(pokemon_name, state)
-print("----------------------------")
 PokeApi().get_all("ditto", "True")
 poke_weight = 0
 for i in range(49):
